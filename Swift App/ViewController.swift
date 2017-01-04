@@ -18,17 +18,15 @@ class ViewController: UIViewController {
         
     }
     
-    var tapcount = 0
+    @IBOutlet weak var text1: UITextField!
+    
+    
+    @IBOutlet weak var text2: UITextField!
+    
     
     @IBAction func buttontapped(_ sender: Any) {
-        label.text = "Hello"
-        if label.textColor == UIColor.white {
-            label.textColor = UIColor.black
-        } else {
-            label.textColor = UIColor.white
-            tapcount = tapcount + 1
-            print(tapcount)
-        }
+        label.textColor = UIColor.white
+        label.text = String(Double(text1.text!)! + Double(text2.text!)!)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

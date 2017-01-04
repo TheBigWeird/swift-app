@@ -34,21 +34,44 @@
                                     <action selector="buttontapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kxt-Fi-ZlE"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d7K-pg-RO5">
+                                <rect key="frame" x="138" y="181" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3rR-zS-KVt"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1h5-J0-g0v">
+                                <rect key="frame" x="137.5" y="231" width="100" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4Qh-AT-mfk" firstAttribute="top" secondItem="eu3-L5-qRV" secondAttribute="bottom" constant="50" id="CQf-ux-C32"/>
+                            <constraint firstItem="4Qh-AT-mfk" firstAttribute="top" secondItem="d7K-pg-RO5" secondAttribute="bottom" constant="-100" id="EfZ-Se-nnh"/>
+                            <constraint firstItem="1h5-J0-g0v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GgC-wO-vNy"/>
+                            <constraint firstItem="d7K-pg-RO5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ODy-tV-zfE"/>
                             <constraint firstItem="eu3-L5-qRV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="hWU-vA-dzR"/>
+                            <constraint firstItem="1h5-J0-g0v" firstAttribute="width" secondItem="d7K-pg-RO5" secondAttribute="width" id="jQn-0r-Fm1"/>
                             <constraint firstItem="4Qh-AT-mfk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jfp-Gz-rxk"/>
+                            <constraint firstItem="1h5-J0-g0v" firstAttribute="top" secondItem="d7K-pg-RO5" secondAttribute="bottom" constant="20" id="uI5-hs-NiP"/>
                             <constraint firstItem="eu3-L5-qRV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yrB-dA-0Yb"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="eu3-L5-qRV" id="pIS-wL-cD4"/>
+                        <outlet property="text1" destination="d7K-pg-RO5" id="uG4-ee-xc6"/>
+                        <outlet property="text2" destination="1h5-J0-g0v" id="bub-4R-hu7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
