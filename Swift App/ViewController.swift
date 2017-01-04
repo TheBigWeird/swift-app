@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttontapped(_ sender: Any) {
         label.textColor = UIColor.white
-        label.text = String(Double(text1.text!)! + Double(text2.text!)!)
+        label.text = "\(text1.text!) + \(text2.text!) = \(Double(text1.text!)! + Double(text2.text!)!)"
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
