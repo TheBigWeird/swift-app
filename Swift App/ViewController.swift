@@ -9,8 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var button: UIButton!
+  
+    
+    @IBAction func add(_ sender: Any) {
+        label.textColor = UIColor.white
+        label.text = "\(text1.text!) + \(text2.text!) = \(Double(text1.text!)! + Double(text2.text!)!)"
+    }
 
+    @IBAction func subtract(_ sender: Any) {
+        label.textColor = UIColor.white
+        label.text = "\(text1.text!) - \(text2.text!) = \(Double(text1.text!)! - Double(text2.text!)!)"
+    }
+    
+    @IBAction func multiply(_ sender: Any) {
+        label.textColor = UIColor.white
+        label.text = "\(text1.text!) x \(text2.text!) = \(Double(text1.text!)! * Double(text2.text!)!)"
+    }
+    
+    @IBAction func divide(_ sender: Any) {
+        label.textColor = UIColor.white
+        label.text = "\(text1.text!) / \(text2.text!) = \(Double(text1.text!)! / Double(text2.text!)!)"
+    }
+    
     @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +44,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var text2: UITextField!
     
     
-    @IBAction func buttontapped(_ sender: Any) {
-        label.textColor = UIColor.white
-        label.text = "\(text1.text!) + \(text2.text!) = \(Double(text1.text!)! + Double(text2.text!)!)"
-    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
